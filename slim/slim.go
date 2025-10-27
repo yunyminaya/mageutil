@@ -18,7 +18,7 @@ func Bashes(scripts ...string) {
 
 // Each arg is a line of a single bash script.
 func Bash(lines ...string) {
-	Bash(strings.Join(lines, "\n"))
+	Bashes(strings.Join(lines, "\n"))
 }
 
 func bashSingleContextError(ctx context.Context, script string) error {
